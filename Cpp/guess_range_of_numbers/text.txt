@@ -1,0 +1,32 @@
+Object-Oriented Programming (C++) term project 👩🏻‍💻
+==================================================
+
+* Create a class named game.
+
+* In the header file header.h, define the objects of the class.
+
+* In the file named setup.cpp, define the Constructor, Public and Private Functions of the Class here.
+
+* The class should have only one public member function named `PlayGame` that takes no parameters and returns void. 
+(DON'T forget to put this function inside the cpp file!).
+
+* Define at least 5 private member variables.
+
+* Your class should have at least 3 private member functions, and these functions should be called by the public function named `PlayGame`. 
+They should perform different sub-tasks of the game.
+
+* The user should pass game-related data to the object of the class through a 3-parameter constructor.
+
+* When the user calls the public member function of the class with `game.PlayGame();`, the game should start and continue interactively with guess data from the keyboard.
+
+* The game should first assign random integers to the array elements in the activated part of the static array using the information taken through the constructor. This should be done with a private member function.
+
+* Then, the player is asked to enter one of the random integers in the array as a guess.
+
+  If the user's guess exists in the array, this guess is shifted to the end of the array. In the meantime, the current guess that is guessed correctly and shifted to the end, and the array elements that were previously guessed correctly should be printed to the screen. Array elements guessed incorrectly should be printed to the screen by hiding the content with X. Searching/shifting operations should be done with the help of a private member function.
+
+* If the player enters a number they have guessed correctly before, a warning should be given to the player that they have already guessed this number, and one of their guessing rights should be used in this case.
+
+* In this way, the game continues until the player guesses all the numbers in the array or uses up all their rights.
+
+* When the player reaches the end, all elements of the array should be printed to the screen, and if the player can guess all the numbers, it should also be reflected on the screen that they won the game.
